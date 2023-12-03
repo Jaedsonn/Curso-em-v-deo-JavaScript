@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var nome = prompt('Qual é o seu nome? ');
+        var idade = prompt('Qual é a sua idade? ');
+        var salário = Number(prompt('Quanto você ganha atualmente? '))
+        document.write(`Olá ${nome}, como você ja possúi ${idade} anos de idade é viável darmos um aumento de salário de 5% encima do seu atual salário
+que corresponde à ${salário.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}<br>`)
+        var aumento = salário + 5 / 100 * salário;
+        document.write(`Ou seja, a partir dessa data você pássara a ganhar ${aumento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`)
+
+    </script>
+</body>
+
+</html>

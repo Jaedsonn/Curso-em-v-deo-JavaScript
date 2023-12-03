@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body class="corpo">
+    <div>meta</div>
+    <div>meta</div>
+    <div>meta</div>
+    <div>meta</div>
+    <div>meta</div>
+    <div>meta</div>
+
+    <button onclick="clica()"></button>
+</body>
+
+
+<script>
+    var elemento = document.getElementsByTagName("div")[0]
+    var elemento1 = document.getElementsByTagName("div")[1]
+    var elemento2 = document.getElementsByTagName("div")[2]
+    var elemento3 = document.getElementsByTagName("div")[3]
+    var elemento4 = document.getElementsByTagName("div")[4]
+    var elemento5 = document.getElementsByTagName("div")[5]
+
+    function clica() {
+        while(elemento.value == "meta"){ 
+        elemento.innerHTML = "mudou"
+        elemento1.innerHTML = "mudou"
+        elemento2.innerHTML = "mudou"
+        elemento3.innerHTML = "mudou"
+        elemento4.innerHTML = "mudou"
+        elemento5.innerHTML = "mudou"
+         }
+    }
+</script>
+
+</html>

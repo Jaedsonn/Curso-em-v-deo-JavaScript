@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Você é do/a...</h1>
+    <input type="text" name="nacionalidade" id="nacio">
+    <input type="button" onclick="show()" value="bora ver">
+    <p id="res"></p>
+
+    <script>
+        function show() {
+            var nacio = document.getElementById('nacio').value;
+            if (nacio == 'Brasil') {
+                document.getElementById("res").innerHTML = "Você é brasileiro.";
+            } else {
+                document.getElementById("res").innerHTML = "Você é estrangeiro";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
